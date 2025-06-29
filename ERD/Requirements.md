@@ -1,4 +1,4 @@
-Entities and Their Attributes
+***Entities and Their Attributes***
 User
 
 user_id: Primary Key, UUID, Indexed
@@ -59,3 +59,5 @@ Booking to Payment: One-to-One (Each booking has one payment)
 User to Review: One-to-Many (One user can leave multiple reviews)
 Property to Review: One-to-Many (One property can have multiple reviews)
 User to Message: One-to-Many (One user can send and receive multiple messages)
+
+📄 **airbnb-database-diagram.png**
