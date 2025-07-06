@@ -20,7 +20,9 @@ SELECT
 FROM 
     properties p
 LEFT JOIN 
-    reviews r ON p.property_id = r.property_id;
+    reviews r ON p.property_id = r.property_id
+ORDER BY 
+    p.name ASC;  -- Change to r.rating DESC if you want to sort by rating
 
 SELECT 
     u.user_id,
