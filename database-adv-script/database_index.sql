@@ -11,3 +11,5 @@ CREATE INDEX idx_booking_dates ON bookings(start_date, end_date);
 CREATE INDEX idx_property_id ON properties(property_id);
 CREATE INDEX idx_property_name ON properties(name);
 CREATE INDEX idx_property_location ON properties(location);
+
+EXPLAIN SELECT * FROM bookings WHERE user_id = 'some_user_id';
