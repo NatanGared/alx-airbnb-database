@@ -3,6 +3,7 @@ SELECT
     u.first_name,
     u.last_name,
     COUNT(b.booking_id) AS total_bookings
+    ROW_NUMBER() OVER (ORDER BY COUNT(b.booking_id) DESC) AS booking_rank
 FROM 
     users u
 LEFT JOIN 
