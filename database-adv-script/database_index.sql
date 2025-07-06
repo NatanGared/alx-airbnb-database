@@ -12,4 +12,5 @@ CREATE INDEX idx_property_id ON properties(property_id);
 CREATE INDEX idx_property_name ON properties(name);
 CREATE INDEX idx_property_location ON properties(location);
 
-EXPLAIN SELECT * FROM bookings WHERE user_id = 'some_user_id';
+EXPLAIN SELECT * FROM bookings WHERE user_id = 'Abebe';
+ANALYZE SELECT * FROM bookings WHERE user_id = 'some_user_id';
